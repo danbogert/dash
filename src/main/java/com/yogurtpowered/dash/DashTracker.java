@@ -1,7 +1,7 @@
 package com.yogurtpowered.dash;
 
-import com.yogurtpowered.dash.runnable.ArpRunnable;
 import com.yogurtpowered.dash.runnable.ObserverRunnable;
+import com.yogurtpowered.dash.utils.PcapHelper;
 import org.pcap4j.core.*;
 
 import java.io.Closeable;
@@ -97,7 +97,8 @@ public class DashTracker implements Closeable {
     }
 
     public static void main(String[] args) throws PcapNativeException, NotOpenException, IOException, InterruptedException {
-        DashTracker tracker = new DashTracker("wlp58s0");
+//        DashTracker tracker = new DashTracker("wlp58s0");
+        DashTracker tracker = new DashTracker();
 
         Dash dash = tracker.registerDash("Glad", "00:bb:3a:81:0d:67");
         tracker.registerListener(dash, _dash -> System.out.println("ARP! " + _dash));
