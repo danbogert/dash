@@ -1,8 +1,6 @@
 package com.yogurtpowered.dash.utils;
 
-import com.yogurtpowered.dash.utils.InputHelper;
 import org.pcap4j.core.*;
-import org.pcap4j.util.NifSelector;
 
 import java.io.IOException;
 import java.io.OutputStream;

@@ -15,11 +15,11 @@ public class DashTracker implements Closeable {
 
     private PcapHandle pcapHandle;
 
-    public DashTracker() throws PcapNativeException, IOException, NotOpenException {
+    public DashTracker() throws PcapNativeException, IOException {
         this(null);
     }
 
-    public DashTracker(String networkInterfaceName) throws PcapNativeException, NotOpenException, IOException {
+    public DashTracker(String networkInterfaceName) throws PcapNativeException, IOException {
         this.observers = new HashMap<>();
         this.networkInterface = PcapHelper.getNetworkInterface(networkInterfaceName);
 
