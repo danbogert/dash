@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class DashObserver {
-    private static final long LOCKED_FOR_SECS = 5;
+    private static final long LOCKED_FOR_SECS = 30;
 
     private final Dash dash;
     private final Set<DashListener> listeners;
